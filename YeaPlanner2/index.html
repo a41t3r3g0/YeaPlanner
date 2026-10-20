@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>YeaPlanner</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/Logo.svg" alt="Logo" />
+    </header>
+    <main>
+      <form class="form">
+        <input
+          placeholder="Введите название задачи"
+          class="form_text"
+          required
+          type="text"
+        />
+        <button class="form_btn" type="submit">
+          Добавить <img src="images/plus.svg" alt="" />
+        </button>
+      </form>
+      <section class="tasklist">
+        <div class="tasklist_counters">
+          <div class="tasklist_counters_active">
+            <p class="tasklist_counters_active-text">Всего задач</p>
+            <p class="tasklist_counters_active-counter">0</p>
+          </div>
+          <div class="tasklist_counters_resolved">
+            <p class="tasklist_counters_resolved-text">Решенных задач</p>
+            <p class="tasklist_counters_resolved-counter">0</p>
+          </div>
+        </div>
+        <div class="tasklist_list">
+          <ul class="hidden list"></ul>
+          <img
+            class="tasklist_list_empty-image"
+            src="images/Clipboard.svg"
+            alt="Clipboard"
+          />
+          <p class="tasklist_list_empty-text">
+            <strong>У вас еще нет зарегистрированных задач</strong
+            ><br />Создавайте задачи и организуйте свои дела
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

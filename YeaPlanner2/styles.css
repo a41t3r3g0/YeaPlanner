@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем стандартную стилизацию списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  background-color: #1a1a1a;
+  width: 100%;
+  min-height: calc(100vh - 12.5rem);
+}
+
+header {
+  display: flex;
+  margin-inline: auto;
+  background-color: #0d0d0d;
+  width: 100%;
+  height: 12.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 7.87rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-inline: auto;
+  justify-content: center;
+  height: 3.37rem;
+  width: calc(100% - 2rem);
+  max-width: 46rem;
+  gap: 0.5rem;
+  margin-top: -1.687rem;
+  margin-bottom: 4rem;
+}
+
+.form_text {
+  height: 3.37rem;
+  flex: 1;
+  min-width: 0;
+  background-color: #262626;
+  color: #808080;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.form_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+  height: 3.25rem;
+  background-color: #1e6f9f;
+  color: #f2f2f2;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tasklist {
+  width: calc(100% - 2rem);
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.tasklist_counters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 46rem;
+  margin-inline: auto;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 1.56rem;
+  margin-bottom: 5.5rem;
+}
+
+.tasklist_counters_active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tasklist_counters_active-text {
+  color: #4ea8de;
+}
+
+.tasklist_counters_active-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  background-color: #333333;
+  color: #d9d9d9;
+  border-radius: 999px;
+}
+
+.tasklist_counters_resolved {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.tasklist_counters_resolved-text {
+  color: #8284fa;
+}
+
+.tasklist_counters_resolved-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  color: #d9d9d9;
+  border-radius: 999px;
+}
+
+.tasklist_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasklist_list_empty-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+}
+
+.tasklist_list_empty-text {
+  text-align: center;
+  max-width: 43rem;
+  width: 100%;
+  color: #808080;
+  line-height: 140%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.33rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.tasklist_task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  height: auto;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #333333;
+  color: #f2f2f2;
+}
+
+.tasklist_task p {
+  flex: 1;
+  margin-inline: 1rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.success_button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #4ea8de;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+}
+
+.success_button-clicked {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #5e60ce;
+  background-color: #5e60ce;
+  cursor: pointer;
+  color: white;
+}
+
+.delete_button {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
